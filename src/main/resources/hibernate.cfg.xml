@@ -19,7 +19,7 @@
 
         <!--         <property name="connection.url">jdbc:sqlite:home.db</property>
                 <mapping class="org.example.EmployeeEntity"/>
-                <mapping class="org.example.EmployeeInfoEntity"/>
+                <mapping class="org.example.EmployeeInfoEntity"/> //тут не хватает закрытия комментария -->
 
         <!--        <property name="connection.url">jdbc:sqlite:seminar.db</property>
                 <mapping class="org.max.seminar.ClientEntity"/>
