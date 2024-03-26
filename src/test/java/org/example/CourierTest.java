@@ -21,6 +21,7 @@ public class CourierTest extends AbstractTest {
     public void testReadCourierInfo() {
         try (Session session = getSession()) {
             Query query = session.createQuery("FROM CourierInfoEntity WHERE courierId = :id");
+            // тут надо сделать query.setParameter("id", (short) 1), т.к. courierId типа short
             query.setParameter("id", 1);
             CourierInfoEntity courier = (CourierInfoEntity) query.getSingleResult();
 
